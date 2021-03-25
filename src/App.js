@@ -6,7 +6,7 @@ import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
 
 const App = (props) => {
-;
+
 console.log("mapStateToProps in App.js", props)
   return (
     <div className="boxes">
@@ -15,7 +15,7 @@ console.log("mapStateToProps in App.js", props)
         <AddedFeatures car={props.car} />
       </div>
       <div className="box">
-        <AdditionalFeatures additionalFeatures={props.additionalFeatures} />
+        <AdditionalFeatures  />
         <Total car={props.car} additionalPrice={props.additionalPrice} />
       </div>
     </div>
